@@ -28,7 +28,8 @@ console.log(await getProducts());
 
 //delete a product
 const delProducts = async() => {
-    let data = await pool.query('DELETE FROM products WHERE id = baro')
+    let data = await pool.query('DELETE FROM products WHERE ('product_code = baro1'),'
+        [id])
     return data;
 }
 //inert your favourite food
